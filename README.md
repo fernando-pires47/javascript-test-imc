@@ -14,11 +14,13 @@ Example using native Javascript to calculation of ICM.
 * appendChild
 * createElement
 
-### External API used as hook
+### External API used as hook in action of button "Buscar Pacientes"
 
 https://webhook.site/
 
-##### Change value of variable "urlWebHook" located in the file "buscar-api.js" to your implementation. 
+![](https://github.com/fernando-pires47/javascript-test-imc/blob/main/image/list.png)
+
+Change value of variable **"urlWebHook"** located in the file **"buscar-api.js"** to your implementation. 
 
 ### Example of JSON to implement in the body of request
 
@@ -28,4 +30,10 @@ https://webhook.site/
     altura: string,
     gordura: number
 }
+
+### Run Page
+
+Open file "index.html"
+
+
 

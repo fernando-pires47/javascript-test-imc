@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Teste IMC</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<h1 class="titulo-unidep">Teste IMC</h1>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h1 class="titulo-alunos">Lista de Pacientes</h1>
+
+			<label for="filtrar-tabela" >Filtrar</label>
+			<input id="filtrar-tabela" type="text" name="filtro" placeholder="Digite o nome para pesquisa">
+
+			<table>
+				<thead>
+					<tr id="cabecalho-pacientes">
+						<th>Nome</th>
+						<th>Peso(kg)</th>
+						<th>Altura(m)</th>
+						<th>Gordura Corporal(%)</th>
+						<th>IMC</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-pacientes">
+				</tbody>
+			</table>
+			<span id="erro-ajax" class="invisivel">Erro ao buscar pacientes.</span>
+			<button id="buscar-pacientes">Buscar Pacientes</button>
+		</section>
+	</main>
+
+	<section class="container">
+		<h1 id="titulo-form">Adicionar</h1>
+		<ul id="mensagens-erro" class="invisivel">
+		</ul>
+
+		<form id="form-adiciona">
+			<div class="">
+				<label for="nome">Nome:</label>
+				<input id="nome" name="nome" type="text" placeholder="digite o nome" class="campo">
+			</div>
+			<div class="grupo">
+				<label for="peso">Peso:</label>
+				<input id="peso" name="peso" type="text" placeholder="digite o peso" class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="altura">Altura:</label>
+				<input id="altura" name="altura" type="text" placeholder="digite a altura" class="campo campo-medio">
+			</div>
+			<div class="grupo">
+				<label for="gordura">% de Gordura:</label>
+				<input id="gordura" type="text" placeholder="digite a porcentagem de gordura" class="campo campo-medio">
+			</div>
+
+			<button id="adicionar-paciente" class="botao bto-principal">Adicionar</button>
+
+		</form>
+	</section>
+
+</body>
+
+<script src="js/tabela.js"></script>
+<script src="js/form.js"></script>
+<script src="js/filtrar.js" ></script>
+<script src="js/buscar-api.js"></script>
+</html>

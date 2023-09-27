@@ -1,0 +1,166 @@
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #333;
+	height: 3em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+header h2, h1, h3 {
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+section {
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2, h3 {
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+
+table {
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+label{
+	color: #555;
+	display: block;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+    padding: 0.5em 2em;
+    border: 0;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #0c8cd3;
+    min-width: 20%;
+    display: block;
+    margin: 10px 0px;
+}
+
+button:active{
+	background-color: #0c8dd3d8;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
+
+.aluno-invalido {
+	background-color: lightcoral;
+}
+
+#titulo-form{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#mensagens-erro {
+	color: red;
+    background: #e5e5e5;
+    max-width: fit-content;
+    margin-bottom: 20px;
+    border-radius: 20%;
+    padding: 20px;
+}
+
+.fadeOut {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#filtrar-tabela {
+	width: 350px;
+	height: 35px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.invisivel {
+	display: none;
+}
+
+.titulo-alunos{
+	margin-bottom: 20px;
+}

@@ -1,2 +1,31 @@
-# javascript-teste-imc
-Example of calculation IMC using Javascript 
+# Javascript Test IMC
+Example using native Javascript to calculation of ICM.
+
+### Used in this project
+* HTML
+* CSS
+* Javascript
+
+### Used components such as
+* Event Listeners
+* Ajax Request with (XMLHttpRequest)
+* classList Operations
+* querySelector
+* appendChild
+* createElement
+
+### External API used as hook
+
+https://webhook.site/
+
+##### Change value of variable "urlWebHook" located in the file "buscar-api.js" to your implementation. 
+
+### Example of JSON to implement in the body of request
+
+{
+    nome: string,
+    peso: number,
+    altura: string,
+    gordura: number
+}
+
